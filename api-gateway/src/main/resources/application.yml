@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: "configserver:"
+  cloud:
+    config:
+      uri: http://spring-cloud-config-server.default.svc.cluster.local:8888 # internal access (within the same cluster's namespace 'default')
